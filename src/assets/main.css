@@ -14,35 +14,6 @@ ul, ol {
   list-style: none;
 }
 
-.navbar {
-  margin: 15px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-height: 100px;
-}
-
-.nav-items {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.nav-items ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-item {
-  margin: 0 40px;
-  font-size: 1.2rem;
-}
-
-.gh-logo {
-  width: 40px;
-  margin: 0 20px;
-}
-
 /* Reusable stuff */
 .container {
   max-width: 95%;
