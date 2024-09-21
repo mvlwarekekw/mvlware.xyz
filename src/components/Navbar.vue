@@ -40,7 +40,7 @@
 
 .nav-item {
   margin: 0 40px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .gh-logo {
