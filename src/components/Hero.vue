@@ -39,7 +39,6 @@ const spin = () => {
   height: 80vh;
   align-items: center;
   justify-content: center;
-
 }
 
 .seal-img {

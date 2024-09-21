@@ -22,7 +22,7 @@ ul, ol {
 
 @media screen and (min-width: 1920px) {
   .container {
-    max-width: 2520px;
+    max-width: 2500px;
     margin: auto 0;
   }
 }
