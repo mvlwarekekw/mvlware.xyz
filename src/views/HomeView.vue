@@ -7,7 +7,6 @@ import GradientBar from "@/components/GradientBar.vue";
 
 <template>
   <div class="container">
-    <Navbar />
     <Hero />
     <GradientBar />
   </div>

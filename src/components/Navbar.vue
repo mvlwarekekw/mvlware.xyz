@@ -7,17 +7,28 @@
     <div class="navbar">
       <div class="nav-items">
         <ul>
-          <li class="nav-item">Home</li>
-          <li class="nav-item">About</li>
-          <li class="nav-item">Projects</li>
+          <li class="nav-item">
+            <RouterLink to="/" class="link">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/about" class="link">About</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/projects" class="link">Projects</RouterLink>
+          </li>
         </ul>
       </div>
-      <img src="/src/assets/github-light.svg" alt="" class="gh-logo">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/mvlwarekekw"><img src="/src/assets/github-light.svg" alt="" class="gh-logo"></a>
     </div>
   </nav>
 </template>
 
 <style scoped>
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
 
 .navbar {
   margin: 15px 0;
