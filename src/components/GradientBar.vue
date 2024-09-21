@@ -12,7 +12,7 @@
 .gradient-bar {
   position: fixed;
   bottom: 10px;
-  background: linear-gradient(#ff00f2, #5300ff);
+  background: linear-gradient(to bottom right, #ff00f2, #7700ff, #5300ff);
   width: 99vw;
   height: 3px;
   border-radius: 30px;
