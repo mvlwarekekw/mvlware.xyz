@@ -8,6 +8,15 @@
     <div class="aboutme">
       <h2 class="text-xl">// About Me</h2>
       <p class="text-md">Hey there! I'm Andrin, a 15-year-old high school student from Zurich. When I'm not in school, you'll probably find me gaming or doing coding projects.  I love seals</p>
+      <br>
+      <div class="wrapper">
+        <img src="/src/assets/discord-light.svg" alt="" class="discord">
+        <p class="text-md">@mvlware</p>
+      </div>
+      <div class="wrapper">
+        <img src="/src/assets/email.svg" alt="" class="email">
+        <p class="text-md">mal@mvlware.xyz</p>
+      </div>
     </div>
     <div class="seal">
       <img src="/src/assets/seal.png" alt="cute seal" class="seal-img" id="seal">
@@ -33,6 +42,26 @@
 
 .aboutme p {
   max-width: 40vw;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.discord {
+  width: 42px;
+  height: 42px;
+  margin-right: 30px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.email {
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  zoom: 120%;
 }
 
 .seal {
