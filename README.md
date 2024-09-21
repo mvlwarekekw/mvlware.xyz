@@ -22,3 +22,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+#### Source Reference
+Seal on homepage: [Quebec Maritime Blog](https://www.quebecmaritime.ca/en/blog/what-you-need-to-know-about-whitecoats-baby-seals)
