@@ -32,6 +32,7 @@
 
 .navbar {
   margin: 15px 0;
+  padding-right: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,7 +57,7 @@
 
 .gh-logo {
   width: 40px;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 </style>
