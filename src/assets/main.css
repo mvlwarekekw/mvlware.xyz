@@ -34,6 +34,37 @@ ul, ol {
   }
 }
 
+
+.text-xs {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.text-lg {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.text-xl {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.text-xxl {
+  font-size: 4.2rem;
+  font-weight: 400;
+}
+
 .text-xxxl {
   font-size: 5.3rem;
   font-weight: 400;
