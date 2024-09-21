@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import {ref} from "vue";
 
+const isSpinning = ref(false)
+
+const spin = () => {
+  isSpinning.value = !isSpinning.value
+}
 </script>
 
 <template>
@@ -9,7 +15,7 @@
       <h1 class="text-xxxl">Heya,<br>I'm mvlware</h1>
     </div>
     <div class="seal">
-      <img src="/src/assets/seal.png" alt="cute seal" class="seal-img">
+      <img src="/src/assets/seal.png" alt="cute seal" class="seal-img" :class="{'spin': isSpinning}" id="seal" @mouseover="spin">
     </div>
   </div>
 </section>
@@ -40,6 +46,19 @@
   height: 50vh;
   width: 50vh;
   border-radius: 100%;
-
 }
+
+.spin {
+  animation:spin 2s ease;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 </style>
