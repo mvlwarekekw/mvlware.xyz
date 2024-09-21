@@ -20,3 +20,7 @@ ul, ol {
   margin: auto;
 }
 
+.text-xxxl {
+  font-size: 5.3rem;
+  font-weight: 400;
+}
