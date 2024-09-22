@@ -9,7 +9,7 @@
       <h2 class="text-xl">// About Me</h2>
       <p class="text-md">Hey there! I'm Andrin, a 15-year-old high school student from Zurich. When I'm not in school, you'll probably find me gaming or doing coding projects.  I love seals</p>
       <br>
-      <div class="wrapper">
+      <div class="wrapper dc">
         <img src="/src/assets/discord-light.svg" alt="" class="discord">
         <p class="text-md">@mvlware</p>
       </div>
@@ -40,6 +40,10 @@
   padding-left: 100px;
 }
 
+.aboutme h2 {
+  margin-bottom: 50px;
+}
+
 .aboutme p {
   max-width: 40vw;
 }
@@ -47,6 +51,10 @@
 .wrapper {
   display: flex;
   align-items: center;
+}
+
+.dc {
+  margin: 30px 0;
 }
 
 .discord {
