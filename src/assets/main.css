@@ -69,3 +69,28 @@ ul, ol {
   font-size: 5.3rem;
   font-weight: 400;
 }
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.h-flex-center {
+  justify-content: center;
+}
+
+.v-flex-center {
+  align-items: center;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
