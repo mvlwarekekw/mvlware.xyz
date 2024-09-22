@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 defineProps({
   name: {
     type: String,
@@ -23,8 +21,6 @@ defineProps({
     default: []
   }
 })
-
-
 </script>
 
 <template>
@@ -81,18 +77,18 @@ defineProps({
 
 .description {
   width: 18vw;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .technology {
   width: 1.3vmax;
   height: 1.3vmax;
-  margin: 0 0 0 20px;
+  margin: 0 0 20px 20px;
 }
 
 .wrapper:last-child {
   position: relative;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .c-font-size {
