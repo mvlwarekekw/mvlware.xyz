@@ -20,5 +20,7 @@
 
 .seal {
   border-radius: 100%;
+  height: 40vh;
+  width: 40vh;
 }
 </style>
