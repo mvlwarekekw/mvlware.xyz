@@ -19,7 +19,7 @@ defineProps({
     default: "No website"
   },
   technologies: {
-    type: Array<String>,
+    type: Array<string>,
     default: []
   }
 })
@@ -46,7 +46,7 @@ defineProps({
   </div>
   <div class="wrapper flex flex-row">
     <p class="technologies c-font-size">Technologies:</p>
-    <img v-for="technology in technologies" :src="technology" class="technology">
+    <img v-for="technology in technologies" :src="(technology as string)" class="technology">
   </div>
 </div>
   <!--
