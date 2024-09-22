@@ -34,7 +34,7 @@ ul, ol {
 
 @media screen and (min-width: 1920px) {
   .container-sm {
-    max-width: 1500px;
+    max-width: 1800px;
     margin: 0 auto;
   }
 }
