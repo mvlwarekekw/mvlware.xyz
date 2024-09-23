@@ -22,8 +22,10 @@ import Project from "@/components/Project.vue";
           :technologies="['/src/assets/vuejs.png']"
       />
       <Project
-          name="Coming Soon"
-          description="I'll be working on more projects soon, which will be added here."
+          name="pytwitter"
+          description="Python wrapper for the Twitter API, in dev stages."
+          link="https://github.com/mvlwarekekw/pytwitter"
+          display_link="Github"
           :technologies="[]"
       />
     </div>
