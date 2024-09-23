@@ -28,7 +28,7 @@ defineProps({
   <h2 class="text-lg">
     // {{ name }}
   </h2>
-  <a :href="link" class="link">
+  <a target="_blank" rel="noopener noreferrer" :href="link" class="link" >
     <div class="wrapper flex flex-row v-flex-center">
 
       <img src="/src/assets/opentab.svg" alt="" class="tab-icon">
