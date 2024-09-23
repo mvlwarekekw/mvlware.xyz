@@ -26,7 +26,7 @@ import Project from "@/components/Project.vue";
           description="Python wrapper for the Twitter API, in dev stages."
           link="https://github.com/mvlwarekekw/pytwitter"
           display_link="Github"
-          :technologies="[]"
+          :technologies="['/src/assets/python.png']"
       />
     </div>
   </div>
