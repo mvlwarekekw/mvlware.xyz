@@ -45,9 +45,6 @@ defineProps({
     <img v-for="technology in technologies" :src="(technology as string)" class="technology">
   </div>
 </div>
-  <!--
-    <img src="/src/assets/kotlin.svg" alt="" class="kotlin">
-    <img src="/src/assets/mongodb.svg" alt="" class="mongo">-->
 </template>
 
 <style scoped>
