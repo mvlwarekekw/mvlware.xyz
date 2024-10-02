@@ -10,16 +10,16 @@
       <p class="text-md">Hey there! I'm Andrin, a 15-year-old high school student from Zurich. When I'm not in school, you'll probably find me gaming or doing coding projects.  I love seals</p>
       <br>
       <div class="wrapper dc">
-        <img src="/src/assets/discord-light.svg" alt="" class="discord">
+        <img src="/discord-light.svg" alt="" class="discord">
         <p class="text-md">@mvlware</p>
       </div>
       <div class="wrapper">
-        <img src="/src/assets/email.svg" alt="" class="email">
+        <img src="/email.svg" alt="" class="email">
         <p class="text-md">mal@mvlware.xyz</p>
       </div>
     </div>
     <div class="seal">
-      <img src="/src/assets/seal.png" alt="cute seal" class="seal-img" id="seal">
+      <img src="/seal.png" alt="cute seal" class="seal-img" id="seal">
     </div>
   </div>
 </section>

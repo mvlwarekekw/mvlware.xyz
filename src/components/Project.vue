@@ -31,7 +31,7 @@ defineProps({
   <a target="_blank" rel="noopener noreferrer" :href="link" class="link" >
     <div class="wrapper flex flex-row v-flex-center">
 
-      <img src="/src/assets/opentab.svg" alt="" class="tab-icon">
+      <img src="/opentab.svg" alt="" class="tab-icon">
       <p class="c-font-size">{{ display_link }}</p>
     </div>
   </a>
@@ -42,7 +42,7 @@ defineProps({
   </div>
   <div class="wrapper flex flex-row">
     <p class="technologies c-font-size">Technologies:</p>
-    <img v-for="technology in technologies" :src="(technology as string)" class="technology">
+    <img v-for="technology in technologies" :src="(technology as string)" :alt="technology" class="technology" >
   </div>
 </div>
 </template>

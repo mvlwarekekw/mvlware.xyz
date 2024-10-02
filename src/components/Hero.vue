@@ -15,7 +15,7 @@ const spin = () => {
       <h1 class="text-xxxl">Heya,<br>I'm mvlware</h1>
     </div>
     <div class="seal">
-      <img src="/src/assets/seal.png" alt="cute seal" class="seal-img" :class="{'spin': isSpinning}" id="seal" @mouseover="spin">
+      <img src="/seal.png" alt="cute seal" class="seal-img" :class="{'spin': isSpinning}" id="seal" @mouseover="spin">
     </div>
   </div>
 </section>

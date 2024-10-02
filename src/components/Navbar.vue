@@ -18,7 +18,7 @@
           </li>
         </ul>
       </div>
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/mvlwarekekw"><img src="/src/assets/github-light.svg" alt="" class="gh-logo"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/mvlwarekekw"><img src="/github-light.svg" alt="" class="gh-logo"></a>
     </div>
   </nav>
 </template>

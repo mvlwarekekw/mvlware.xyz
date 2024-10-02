@@ -12,21 +12,21 @@ import Project from "@/components/Project.vue";
       <Project
           name="IskraMC"
           description="IskraMC is a minecraft minigame server network currently in development."
-          :technologies="['/src/assets/kotlin.svg', '/src/assets/mongodb.svg']"
+          :technologies="['/kotlin.svg', '/mongodb.svg']"
       />
       <Project
           name="Personal Website"
           description="My personal Website"
           link="https://mvlware.xyz"
           display_link="mvlware.xyz"
-          :technologies="['/src/assets/vuejs.png']"
+          :technologies="['/vuejs.png']"
       />
       <Project
           name="pytwitter"
           description="Python wrapper for the Twitter API, in dev stages."
           link="https://github.com/mvlwarekekw/pytwitter"
           display_link="Github"
-          :technologies="['/src/assets/python.png']"
+          :technologies="['/python.png']"
       />
     </div>
   </div>
