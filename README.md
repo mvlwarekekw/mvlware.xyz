@@ -7,6 +7,12 @@ Personal website @ https://mvlware.xyz
 
 ## Project Setup
 
+### Clone repo
+```sh
+git clone https://github.com/mvlwarekekw/mvlware.xyz
+```
+
+### Install dependencies
 ```sh
 npm install
 ```
