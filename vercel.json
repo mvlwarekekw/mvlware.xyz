@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/404.vue",
+      "status": 404
+    }
+  ]
+}
