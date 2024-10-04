@@ -25,4 +25,17 @@
   width: 40vh;
   margin: 50px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 100%;
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .wrapper .text-xxxl, .wrapper .text-xl {
+    text-align: center;
+    line-height: 120%;
+  }
+}
 </style>
