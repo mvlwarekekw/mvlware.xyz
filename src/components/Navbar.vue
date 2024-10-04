@@ -107,7 +107,7 @@ function toggle() {
     display: block;
     cursor: pointer;
     position: absolute;
-    right: 50px;
+    right: 40px;
   }
 
   .gh-logo {
