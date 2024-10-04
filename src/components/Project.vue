@@ -52,14 +52,14 @@ defineProps({
   display: flex;
   flex-direction: column;
   background-color: #191818;
-  width: 25vw;
+  width: 19vw;
   border-radius: 24px;
-  padding: 0 30px;
+  padding: 0 25px;
   margin: 0 30px;
 }
 
 .card h2 {
-  margin: 30px 0 0;
+  margin: 25px 0 0;
 }
 
 .tab-icon {
@@ -74,13 +74,13 @@ defineProps({
 
 .description {
   width: 18vw;
-  margin: 20px 0;
+  margin: 17px 0;
 }
 
 .technology {
   width: 1.3vmax;
   height: 1.3vmax;
-  margin: 0 0 20px 20px;
+  margin: 0 0 12px 20px;
 }
 
 .wrapper:last-child {

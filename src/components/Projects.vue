@@ -9,25 +9,37 @@ import Project from "@/components/Project.vue";
       <h1 class="text-xxl">Projects</h1>
     </div>
     <div class="projects">
-      <Project
-          name="IskraMC"
-          description="IskraMC is a minecraft minigame server network currently in development."
-          :technologies="['/kotlin.svg', '/mongodb.svg']"
-      />
-      <Project
-          name="Personal Website"
-          description="My personal Website"
-          link="https://mvlware.xyz"
-          display_link="mvlware.xyz"
-          :technologies="['/vuejs.png']"
-      />
-      <Project
-          name="pytwitter"
-          description="Python wrapper for the Twitter API, in dev stages."
-          link="https://github.com/mvlwarekekw/pytwitter"
-          display_link="Github"
-          :technologies="['/python.png']"
-      />
+      <div class="project-row">
+        <Project
+            name="IskraMC"
+            description="IskraMC is a minecraft minigame server network currently in development."
+            :technologies="['/kotlin.svg', '/mongodb.svg']"
+        />
+        <Project
+            name="Personal Website"
+            description="My personal Website (the website you are on at this moment)"
+            link="https://mvlware.xyz"
+            display_link="mvlware.xyz"
+            :technologies="['/vuejs.png']"
+        />
+
+        <Project
+            name="fuck distractions"
+            description="A chrome extension that automatically blocks yt shorts, instagram and tiktok. :D"
+            link="https://github.com/mvlwarekekw/fuckDistractions"
+            display_link="GitHub"
+            :technologies="['/js.png']"
+        />
+      </div>
+      <div class="project-row">
+        <Project
+            name="pytwitter"
+            description="Python wrapper for the Twitter API, development paused because Im unable to test the API."
+            link="https://github.com/mvlwarekekw/pytwitter"
+            display_link="Github"
+            :technologies="['/python.png']"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -39,8 +51,13 @@ import Project from "@/components/Project.vue";
 
 .projects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.project-row {
+  display: flex;
+  margin: 30px 0;
 }
 
 </style>
