@@ -60,4 +60,30 @@ const spin = () => {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    height: 30vh;
+    padding: 0 40px;
+  }
+
+  .title .text-xxxl {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .seal {
+    height: 50vh;
+  }
+
+  .seal-img {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
 </style>
