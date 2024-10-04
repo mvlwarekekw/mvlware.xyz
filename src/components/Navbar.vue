@@ -89,7 +89,7 @@ function toggle() {
     align-items: center;
     justify-content: center;
 
-    width: 60%;
+    width: 77%;
     height: 60%;
   }
 
