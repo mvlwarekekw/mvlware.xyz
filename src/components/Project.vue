@@ -92,4 +92,20 @@ defineProps({
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .card {
+    width: 70%;
+    margin: 20px 30px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .technology {
+    width: 4vmax;
+    height: 4vmax;
+  }
+}
+
 </style>

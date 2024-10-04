@@ -60,4 +60,12 @@ import Project from "@/components/Project.vue";
   margin: 30px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .project-row {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 </style>

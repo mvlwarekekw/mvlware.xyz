@@ -77,6 +77,7 @@ function toggle() {
     border-radius: 15px;
     text-align: center;
     transition: 0.3s;
+    z-index: 100;
   }
 
   .nav-items {
@@ -126,7 +127,6 @@ function toggle() {
   .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
 }
 
 .nav-menu {
