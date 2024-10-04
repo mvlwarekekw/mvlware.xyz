@@ -84,4 +84,31 @@
   width: 50vh;
   border-radius: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutme {
+    height: 100%;
+    padding: 20px 40px;
+  }
+
+  .aboutme p {
+    max-width: 75vw;
+  }
+
+  .seal {
+    height: 50vh;
+  }
+
+  .seal-img {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
 </style>
