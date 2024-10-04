@@ -36,7 +36,7 @@ import Project from "@/components/Project.vue";
             name="pytwitter"
             description="Python wrapper for the Twitter API, development paused because Im unable to test the API."
             link="https://github.com/mvlwarekekw/pytwitter"
-            display_link="Github"
+            display_link="GitHub"
             :technologies="['/python.png']"
         />
       </div>
