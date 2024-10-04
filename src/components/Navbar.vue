@@ -16,13 +16,13 @@ function toggle() {
       <div class="nav-menu" :class="{'active' : burger}">
         <ul class="nav-items" :class="{'active': burger}">
           <li class="nav-item">
-            <RouterLink to="/" class="link">Home</RouterLink>
+            <RouterLink to="/" class="link" @click="toggle">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/about" class="link">About</RouterLink>
+            <RouterLink to="/about" class="link" @click="toggle">About</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/projects" class="link">Projects</RouterLink>
+            <RouterLink to="/projects" class="link" @click="toggle">Projects</RouterLink>
           </li>
         </ul>
       </div>
