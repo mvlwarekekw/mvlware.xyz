@@ -9,12 +9,8 @@ import Project from "@/components/Project.vue";
       <h1 class="text-xxl">Projects</h1>
     </div>
     <div class="projects">
+      <h1 class="subtitle text-xl">// Websites</h1>
       <div class="project-row">
-        <Project
-            name="IskraMC"
-            description="IskraMC is a minecraft minigame server network currently in development."
-            :technologies="['/kotlin.svg', '/mongodb.svg']"
-        />
         <Project
             name="Personal Website"
             description="My personal Website (the website you are on at this moment)"
@@ -22,15 +18,8 @@ import Project from "@/components/Project.vue";
             display_link="mvlware.xyz"
             :technologies="['/vuejs.png']"
         />
-
-        <Project
-            name="fuck distractions"
-            description="A chrome extension that automatically blocks yt shorts, instagram and tiktok. :D"
-            link="https://github.com/mvlwarekekw/fuckDistractions"
-            display_link="GitHub"
-            :technologies="['/js.png']"
-        />
       </div>
+      <h1 class="subtitle text-xl">// Python and Java/Kotlin Projects</h1>
       <div class="project-row">
         <Project
             name="pytwitter"
@@ -39,7 +28,23 @@ import Project from "@/components/Project.vue";
             display_link="GitHub"
             :technologies="['/python.png']"
         />
+        <Project
+            name="IskraMC"
+            description="IskraMC is a minecraft minigame server network currently in development."
+            :technologies="['/kotlin.svg', '/mongodb.svg']"
+        />
       </div>
+      <h1 class="subtitle text-xl">// Browser Extensions</h1>
+      <div class="project-row">
+        <Project
+            name="fuck distractions"
+            description="A chrome extension that automatically blocks yt shorts, instagram and tiktok. :D"
+            link="https://github.com/mvlwarekekw/fuckDistractions"
+            display_link="GitHub"
+            :technologies="['/js.png']"
+        />
+      </div>
+
     </div>
   </div>
 </template>
@@ -47,6 +52,14 @@ import Project from "@/components/Project.vue";
 <style scoped>
 .title {
   margin: 50px 0;
+}
+
+.subtitle {
+  margin: 0 30px;
+}
+
+.subtitle:not(:nth-child(1)) {
+  margin-bottom: 30px;
 }
 
 .projects {
@@ -65,6 +78,11 @@ import Project from "@/components/Project.vue";
     display: flex;
     flex-direction: column;
     margin: 0;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    margin-top: 10px;
   }
 }
 

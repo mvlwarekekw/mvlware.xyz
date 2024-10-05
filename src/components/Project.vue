@@ -30,7 +30,6 @@ defineProps({
   </h2>
   <a target="_blank" rel="noopener noreferrer" :href="link" class="link" >
     <div class="wrapper flex flex-row v-flex-center">
-
       <img src="/opentab.svg" alt="" class="tab-icon">
       <p class="c-font-size">{{ display_link }}</p>
     </div>
@@ -96,6 +95,10 @@ defineProps({
   .card {
     width: 70%;
     margin: 20px 30px;
+  }
+
+  .card h2 {
+    font-size: 2rem;
   }
 
   .description {
