@@ -12,7 +12,12 @@ const spin = () => {
 <section>
   <div class="hero">
     <div class="title">
-      <h1 class="text-xxxl">Heya,<br>I'm mvlware</h1>
+      <h1 class="text-xxxl">Heya</h1>
+      <div class="flex">
+        <h1 class="anim text-xxxl"></h1>
+        <div class="cursor"></div>
+      </div>
+      <h2 class="text-xl">A 15-year old full-stack developer</h2>
     </div>
     <div class="seal">
       <img src="/seal.png" alt="cute seal" class="seal-img" :class="{'spin': isSpinning}" id="seal" @mouseover="spin">
@@ -27,6 +32,27 @@ const spin = () => {
   grid-template-columns: 65% 35%;
   width: 100%
 }
+
+.anim:after {
+  content: "";
+  animation: typewriter 1s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.cursor {
+  display: block;
+  background-color: white;
+  height: 80px;
+  width: 6px;
+  margin-left: 5px;
+  align-self: center;
+  animation: 3s blink 0.85s linear infinite;
+}
+
+.hero h2 {
+  color: #a1a1a1;
+}
+
 
 .title {
   height: 80vh;
@@ -48,7 +74,7 @@ const spin = () => {
 }
 
 .spin {
-  animation:spin 2s ease;
+  animation: spin 2s ease;
 }
 
 @keyframes spin {
@@ -57,6 +83,57 @@ const spin = () => {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    content: "I";
+  }
+  4% {
+    content: "I'";
+  }
+  12% {
+    content: "I'm";
+  }
+  22% {
+    content: "I'm ";
+  }
+  29% {
+    content: "I'm m";
+  }
+  34% {
+    content: "I'm mv";
+  }
+  43% {
+    content: "I'm mvl";
+  }
+  50% {
+    content: "I'm mvlw";
+  }
+  57% {
+    content: "I'm mvlwa";
+  }
+  65% {
+    content: "I'm mvlwar";
+  }
+  71% {
+    content: "I'm mvlware";
+  }
+  100% {
+    content: "I'm mvlware";
   }
 }
 
@@ -72,12 +149,23 @@ const spin = () => {
   }
 
   .title .text-xxxl {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
+  }
+
+  .title .text-xl {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cursor {
+    height: 40px;
+    width: 3px;
   }
 
   .seal {
     height: 50vh;
+    margin-top: 20px;
   }
 
   .seal-img {
