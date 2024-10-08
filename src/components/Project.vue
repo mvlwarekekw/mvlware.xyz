@@ -41,7 +41,10 @@ defineProps({
   </div>
   <div class="wrapper flex flex-row">
     <p class="technologies c-font-size">Technologies:</p>
-    <img v-for="technology in technologies" :src="(technology as string)" :alt="technology" class="technology" >
+    <div v-for="technology in technologies" class="technology-wrapper">
+      <img :src="(technology as string)" :alt="technology" class="technology" >
+    </div>
+
   </div>
 </div>
 </template>
@@ -76,10 +79,20 @@ defineProps({
   margin: 17px 0;
 }
 
+.technology-wrapper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
 .technology {
   width: 1.3vmax;
   height: 1.3vmax;
-  margin: 0 0 12px 20px;
+  padding: 0 20px 4px 10px;
+}
+
+.technology:nth-child(1) {
+  padding-left: 20px;
 }
 
 .wrapper:last-child {

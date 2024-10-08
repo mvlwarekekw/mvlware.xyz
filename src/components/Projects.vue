@@ -16,7 +16,7 @@ import Project from "@/components/Project.vue";
             description="My personal Website (the website you are on at this moment)"
             link="https://mvlware.xyz"
             display_link="mvlware.xyz"
-            :technologies="['/vuejs.png']"
+            :technologies="['/vuejs.svg']"
         />
       </div>
       <h1 class="subtitle text-xl">// Python and Java/Kotlin Projects</h1>
@@ -26,7 +26,7 @@ import Project from "@/components/Project.vue";
             description="Python wrapper for the Twitter API, development paused because Im unable to test the API."
             link="https://github.com/mvlwarekekw/pytwitter"
             display_link="GitHub"
-            :technologies="['/python.png']"
+            :technologies="['/python.svg']"
         />
         <Project
             name="IskraMC"
@@ -41,7 +41,7 @@ import Project from "@/components/Project.vue";
             description="A chrome extension that automatically blocks yt shorts, instagram and tiktok. :D"
             link="https://github.com/mvlwarekekw/fuckDistractions"
             display_link="GitHub"
-            :technologies="['/js.png']"
+            :technologies="['/js.svg']"
         />
       </div>
 
