@@ -139,10 +139,6 @@ const technology_name = (path: String) => {
     flex-direction: column;
   }
 
-  .mobile {
-    flex-direction: column;
-  }
-
   .technologies {
     text-align: left;
   }
