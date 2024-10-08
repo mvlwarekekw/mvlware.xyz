@@ -84,7 +84,6 @@ const spin = () => {
 
 .seal {
   display: flex;
-  height: 80vh;
   align-items: center;
   justify-content: center;
 }
@@ -196,10 +195,13 @@ const spin = () => {
   .seal {
     display: block;
     align-self: center;
+    margin-bottom: 30px;
   }
 
   .seal-img {
     margin: 0;
+    height: 40vh;
+    width: 40vh;
   }
 }
 
