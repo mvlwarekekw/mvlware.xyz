@@ -16,7 +16,7 @@ import Project from "@/components/Project.vue";
             description="My personal Website (the website you are on at this moment)"
             link="https://mvlware.xyz"
             display_link="mvlware.xyz"
-            :technologies="['/vuejs.svg']"
+            :technologies="['/vueJS.svg', '/typeScript.svg']"
         />
       </div>
       <h1 class="subtitle text-xl">// Python and Java/Kotlin Projects</h1>
@@ -31,7 +31,7 @@ import Project from "@/components/Project.vue";
         <Project
             name="IskraMC"
             description="IskraMC is a minecraft minigame server network currently in development."
-            :technologies="['/kotlin.svg', '/mongodb.svg']"
+            :technologies="['/kotlin.svg', '/mongoDB.svg']"
         />
       </div>
       <h1 class="subtitle text-xl">// Browser Extensions</h1>
@@ -41,7 +41,7 @@ import Project from "@/components/Project.vue";
             description="A chrome extension that automatically blocks yt shorts, instagram and tiktok. :D"
             link="https://github.com/mvlwarekekw/fuckDistractions"
             display_link="GitHub"
-            :technologies="['/js.svg']"
+            :technologies="['/javaScript.svg']"
         />
       </div>
 
