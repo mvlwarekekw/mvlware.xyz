@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const burger = ref(true)
 const menu = ref(false)
 
 function toggle() {
-  burger.value = !burger.value
   menu.value = !menu.value
 }
 </script>
@@ -13,8 +11,8 @@ function toggle() {
 <template>
   <nav>
     <div class="navbar">
-      <div class="nav-menu" :class="{'active' : burger}">
-        <ul class="nav-items" :class="{'active': burger}">
+      <div class="nav-menu" :class="{'active' : menu}">
+        <ul class="nav-items" :class="{'active': menu}">
           <li class="nav-item">
             <RouterLink to="/" class="link" @click="toggle">Home</RouterLink>
           </li>
@@ -27,7 +25,7 @@ function toggle() {
         </ul>
       </div>
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/mvlwarekekw"><img src="/github-light.svg" alt="" class="gh-logo"></a>
-      <div class="burger" :class="{'active' : burger}" @click="toggle">
+      <div class="burger" :class="{'active' : menu}" @click="toggle">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
