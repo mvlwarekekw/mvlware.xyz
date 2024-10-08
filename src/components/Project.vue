@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Technology from "@/components/Technology.vue";
+
 defineProps({
   name: {
     type: String,
@@ -21,32 +23,41 @@ defineProps({
     default: []
   }
 })
+
+const technology_name = (path: String) => {
+  const technology = (path as string)
+      .replace('/', '')
+      .replace('.svg', '')
+
+  return technology.charAt(0).toUpperCase() + technology.slice(1)
+}
 </script>
 
 <template>
-<div class="card">
-  <h2 class="text-lg">
-    // {{ name }}
-  </h2>
-  <a target="_blank" rel="noopener noreferrer" :href="link" class="link" >
-    <div class="wrapper flex flex-row v-flex-center">
-      <img src="/opentab.svg" alt="" class="tab-icon">
-      <p class="c-font-size">{{ display_link }}</p>
+  <div class="card">
+    <h2 class="text-lg">
+      // {{ name }}
+    </h2>
+    <a target="_blank" rel="noopener noreferrer" :href="link" class="link" >
+      <div class="wrapper flex flex-row v-flex-center">
+        <img src="/opentab.svg" alt="" class="tab-icon">
+        <p class="c-font-size">{{ display_link }}</p>
+      </div>
+    </a>
+    <div class="wrapper">
+      <p class="text-md description">
+        {{ description }}
+      </p>
     </div>
-  </a>
-  <div class="wrapper">
-    <p class="text-md description">
-       {{ description }}
-    </p>
-  </div>
-  <div class="wrapper flex flex-row">
-    <p class="technologies c-font-size">Technologies:</p>
-    <div v-for="technology in technologies" class="technology-wrapper">
-      <img :src="(technology as string)" :alt="technology" class="technology" >
+    <div class="wrapper flex flex-row technologies">
+      <div class="technology-wrapper-title">
+        <p class="c-font-size mr">Technologies:</p>
+      </div>
+      <div v-for="technology in technologies" class="technology-wrapper">
+        <Technology v-bind:name="technology_name(technology)" v-bind:path="technology" />
+      </div>
     </div>
-
   </div>
-</div>
 </template>
 
 <style scoped>
@@ -79,20 +90,26 @@ defineProps({
   margin: 17px 0;
 }
 
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .technology-wrapper {
   display: flex;
   align-items: center;
-  justify-items: center;
+  border: 3px #fff;
+  margin-right: 15px;
+  margin-bottom: 5px;
 }
 
-.technology {
-  width: 1.3vmax;
-  height: 1.3vmax;
-  padding: 0 20px 4px 10px;
+.technology-wrapper-title {
+  display: flex;
+  align-items: center;
 }
 
-.technology:nth-child(1) {
-  padding-left: 20px;
+.mr {
+  margin-right: 15px;
 }
 
 .wrapper:last-child {
@@ -118,9 +135,16 @@ defineProps({
     width: 100%;
   }
 
-  .technology {
-    width: 4vmax;
-    height: 4vmax;
+  .technology-wrapper {
+    flex-direction: column;
+  }
+
+  .mobile {
+    flex-direction: column;
+  }
+
+  .technologies {
+    text-align: left;
   }
 }
 
