@@ -9,6 +9,12 @@
       <h2 class="text-xl">// About Me</h2>
       <p class="text-md">Hey there! I'm Andrin, a 15-year-old high school student from Zurich. When I'm not in school, you'll probably find me gaming or doing coding projects.  I love seals</p>
       <br>
+      <div>
+        <a href="/projects" class="projects-link">
+          <img class="arrow" src="/arrow.svg" alt="">
+          <h3 class="text-md">Projects</h3>
+        </a>
+      </div>
       <div class="wrapper dc">
         <img src="/discord-light.svg" alt="" class="discord">
         <p class="text-md">@mvlware</p>
@@ -52,6 +58,21 @@
   display: flex;
   align-items: center;
 }
+
+.projects-link {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.projects-link h3 {
+  margin-left: 10px;
+}
+
+.arrow{
+  height: 30px;
+}
+
 
 .dc {
   margin: 30px 0;
