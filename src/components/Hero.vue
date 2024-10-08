@@ -166,7 +166,6 @@ const spin = () => {
   }
 
   .title {
-    height: 30vh;
     padding: 0 40px;
   }
 
@@ -185,14 +184,22 @@ const spin = () => {
     width: 3px;
   }
 
+  .skill-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    margin: 10px 0;
+  }
+
   .seal {
-    height: 50vh;
-    margin-top: 20px;
+    display: block;
+    align-self: center;
   }
 
   .seal-img {
-    height: 40vh;
-    width: 40vh;
+    margin: 0;
   }
 }
 
