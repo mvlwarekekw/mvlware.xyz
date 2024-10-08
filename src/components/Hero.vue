@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
+import Skill from "@/components/Skill.vue";
 
 const isSpinning = ref(false)
 
@@ -18,6 +19,14 @@ const spin = () => {
         <div class="cursor"></div>
       </div>
       <h2 class="text-xl">A 15-year old full-stack developer</h2>
+      <div class="skills">
+        <div class="skill-row">
+          <Skill path="/python.svg" name="Python" class="skill" />
+          <Skill path="/js.svg" name="JavaScript" class="skill" />
+          <Skill path="/ts.svg" name="TypeScript" class="skill" />
+          <Skill path="/kotlin.svg" name="Kotlin" class="skill" />
+        </div>
+      </div>
     </div>
     <div class="seal">
       <img src="/seal.png" alt="cute seal" class="seal-img" :class="{'spin': isSpinning}" id="seal" @mouseover="spin">
@@ -58,6 +67,19 @@ const spin = () => {
   height: 80vh;
   padding-left: 100px;
   align-content: center;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skill-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-right: 25px
 }
 
 .seal {
