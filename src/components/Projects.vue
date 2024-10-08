@@ -59,7 +59,7 @@ import Project from "@/components/Project.vue";
 }
 
 .subtitle:not(:nth-child(1)) {
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .projects {
