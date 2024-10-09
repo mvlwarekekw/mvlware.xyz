@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Project from "@/components/Project.vue";
-import json from '@/json/projects.json'
 import {onMounted, ref} from "vue";
 
 interface ProjectType {
