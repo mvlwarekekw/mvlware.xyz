@@ -9,19 +9,29 @@
       <h2 class="text-xl">// About Me</h2>
       <p class="text-md">Hey there! I'm Andrin, a 15-year-old high school student from Zurich. When I'm not in school, you'll probably find me gaming or doing coding projects.  I love seals</p>
       <br>
-      <div>
-        <a href="/projects" class="projects-link">
-          <img class="arrow" src="/arrow.svg" alt="">
-          <h3 class="text-md">Projects</h3>
-        </a>
+      <div class="flex flex-row">
+        <div class="arrows">
+          <a href="/projects" class="projects-link">
+            <img class="arrow" src="/arrow.svg" alt="">
+            <h3 class="text-md">Projects</h3>
+          </a>
+        </div>
+        <div class="arrows">
+          <a href="https://github.com/mvlwarekekw" target="_blank" class="projects-link">
+            <img class="arrow" src="/arrow.svg" alt="">
+            <h3 class="text-md">GitHub</h3>
+          </a>
+        </div>
       </div>
-      <div class="wrapper dc">
-        <img src="/discord-light.svg" alt="" class="discord">
-        <p class="text-md">@mvlware</p>
-      </div>
-      <div class="wrapper">
-        <img src="/email.svg" alt="" class="email">
-        <p class="text-md">mal@mvlware.xyz</p>
+      <div class="flex flex-row mobile-wrap">
+        <div class="wrapper dc">
+          <img src="/discord-light.svg" alt="" class="discord">
+          <p class="text-md">@mvlware</p>
+        </div>
+        <div class="wrapper">
+          <img src="/email.svg" alt="" class="email">
+          <p class="text-md">mal@mvlware.xyz</p>
+        </div>
       </div>
     </div>
     <div class="seal">
@@ -57,6 +67,7 @@
 .wrapper {
   display: flex;
   align-items: center;
+  opacity: 50%;
 }
 
 .projects-link {
@@ -71,11 +82,15 @@
 
 .arrow{
   height: 30px;
+  opacity: 50%;
 }
 
+.arrows:not(:nth-child(1)) {
+  margin: 0 30px;
+}
 
 .dc {
-  margin: 30px 0;
+  margin: 30px 40px 30px 0;
 }
 
 .discord {
@@ -120,6 +135,10 @@
 
   .aboutme p {
     max-width: 75vw;
+  }
+
+  .mobile-wrap {
+    flex-wrap: wrap;
   }
 
   .seal {
