@@ -65,6 +65,7 @@ const technology_name = (path: String) => {
   display: flex;
   flex-direction: column;
   background-color: #191818;
+  width: 26vw;
   border-radius: 24px;
   padding: 0 25px;
   margin: 0 30px;
@@ -85,7 +86,6 @@ const technology_name = (path: String) => {
 }
 
 .description {
-  width: 18vw;
   margin: 17px 0;
 }
 

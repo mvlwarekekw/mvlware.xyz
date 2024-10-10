@@ -1,0 +1,35 @@
+{
+  "1": {
+    "name": "Personal Website",
+    "description": "My personal Website (the website you are on at this moment)",
+    "category":  "website",
+    "link": "https://mvlware.xyz",
+    "display_link": "mvlware.xyz",
+    "technologies": [
+      "/vueJS.svg",
+      "/typeScript.svg"
+    ]
+  },
+  "2": {
+    "name": "pytwitter",
+    "description": "Python wrapper for the Twitter API, development paused because Im unable to test the API.",
+    "category":  "python",
+    "link": "https://github.com/mvlwarekekw/pytwitter",
+    "display_link": "GitHub",
+    "technologies": ["/python.svg"]
+  },
+  "3": {
+    "name": "IskraMC",
+    "description": "IskraMC is a minecraft minigame server network currently in development.",
+    "category":  "kotlin",
+    "technologies": ["/kotlin.svg", "/mongoDB.svg"]
+  },
+  "4": {
+    "name": "Fuck distractions",
+    "description": "A chrome extension that blocks yt shorts, instagram and tiktok websites. :D",
+    "category":  "extension",
+    "link": "https://github.com/mvlwarekekw/fuckDistractions",
+    "display_link": "GitHub",
+    "technologies": ["/javaScript.svg"]
+  }
+}
