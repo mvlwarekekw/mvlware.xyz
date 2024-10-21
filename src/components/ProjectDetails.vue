@@ -41,8 +41,11 @@ const technology_name = (path: String) => {
           </div>
         </div>
         <div class="description">
-          <p class="text-md">{{ project.description }}</p>
+          <p class="text-md">{{ project.summary }}</p>
         </div>
+      </div>
+      <div class="description">
+        <p class="text-md">{{ project.description }}</p>
       </div>
       <div class="links">
         <div class="p text-md text-white">// Links</div>
@@ -102,7 +105,7 @@ const technology_name = (path: String) => {
 }
 
 .details {
-  max-width: 30vw;
+  max-width: 28vw;
 }
 
 .description {

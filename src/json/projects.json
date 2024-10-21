@@ -1,35 +1,54 @@
 {
   "1": {
     "name": "Personal Website",
-    "description": "My personal Website (the website you are on at this moment)",
+    "description": "Website for myself to showcase my work/projects. Website contains about me and projects. It was created using VueJS.",
+    "summary": "My personal Website (this website)",
     "category":  "website",
     "link": "https://mvlware.xyz",
     "display_link": "mvlware.xyz",
+    "github": "https://github.com/mvlwarekekw/mvlware.xyz",
     "technologies": [
       "/vueJS.svg",
       "/typeScript.svg"
+    ],
+    "screenshots": [
+      "/portfolio1.png",
+      "/portfolio2.png"
     ]
   },
   "2": {
     "name": "pytwitter",
     "description": "Python wrapper for the Twitter API, development paused because Im unable to test the API.",
+    "summary": "Python wrapper for the Twitter API. ",
     "category":  "python",
     "link": "https://github.com/mvlwarekekw/pytwitter",
     "display_link": "GitHub",
-    "technologies": ["/python.svg"]
+    "technologies": ["/python.svg"],
+    "screenshots": [
+
+    ]
   },
   "3": {
     "name": "IskraMC",
-    "description": "IskraMC is a minecraft minigame server network currently in development.",
+    "description": "IskraMC is a minecraft minigame server network currently in development. Kotlin is used as the main language for the proxy and mini game plugins. MongoDB is used for all data storing, which might change in the future",
+    "summary": "A minecraft mini game server network.",
     "category":  "kotlin",
-    "technologies": ["/kotlin.svg", "/mongoDB.svg"]
+    "display_link": "No link",
+    "technologies": ["/kotlin.svg", "/mongoDB.svg"],
+    "screenshots": [
+
+    ]
   },
   "4": {
     "name": "Fuck distractions",
-    "description": "A chrome extension that blocks yt shorts, instagram and tiktok websites. :D",
+    "description": "A chrome extension that blocks yt shorts, instagram and tiktok websites. :D Uses JS and the chrome manifest.json, as well as HTML and CSS for the popup.",
+    "summary": "A chrome extension, blocks YT, Insta and TikTok.",
     "category":  "extension",
     "link": "https://github.com/mvlwarekekw/fuckDistractions",
     "display_link": "GitHub",
-    "technologies": ["/javaScript.svg"]
+    "technologies": ["/javaScript.svg"],
+    "screenshots": [
+
+    ]
   }
 }
