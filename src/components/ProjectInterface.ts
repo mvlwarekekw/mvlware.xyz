@@ -1,11 +1,11 @@
 export interface ProjectType {
-    id: number;
+    id?: number;
     name: string;
     description: string;
     category: string;
-    github: string,
+    github?: string,
     technologies: any,
-    summary?: string;
+    summary: string;
     link?: string,
     display_link?: string,
     screenshots?: any
