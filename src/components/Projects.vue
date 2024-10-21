@@ -12,6 +12,7 @@ let divLoaded = ref(false)
 onMounted(() => {
   for (const id in projects) {
     const project = projects[id];
+    project.id = parseInt(id)
     if (categories && categories[project.category]) {
       categories[project.category].push(project);
     } else {
@@ -40,6 +41,7 @@ onMounted(() => {
                   :name="project.name"
                   :description="project.summary"
                   :link="project.link"
+                  :project_id="project.id"
                   :display_link="project.display_link"
                   :technologies="project.technologies"
               />
@@ -55,6 +57,7 @@ onMounted(() => {
                 :name="project.name"
                 :description="project.summary"
                 :link="project.link"
+                :project_id="project.id"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
             />
@@ -66,6 +69,7 @@ onMounted(() => {
                 :name="project.name"
                 :description="project.summary"
                 :link="project.link"
+                :project_id="project.id"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
             />
@@ -80,6 +84,7 @@ onMounted(() => {
                 :name="project.name"
                 :description="project.summary"
                 :link="project.link"
+                :project_id="project.id"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
             />

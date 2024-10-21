@@ -18,6 +18,10 @@ defineProps({
     type: String,
     default: "No website"
   },
+  project_id: {
+    type: Number,
+    default: 1
+  },
   technologies: {
     type: Array<string>,
     default: []
@@ -48,6 +52,12 @@ const technology_name = (path: String) => {
       <p class="text-md description">
         {{ description }}
       </p>
+      <a :href="`/project/${project_id}`">
+        <div class="wrapper flex flex-row v-flex-center">
+          <img src="/arrow.svg" alt="" class="tab-icon">
+          <p class="c-font-size">Project Details</p>
+        </div>
+      </a>
     </div>
     <div class="wrapper flex flex-row technologies">
       <div class="technology-wrapper-title">
@@ -57,6 +67,7 @@ const technology_name = (path: String) => {
         <Technology v-bind:name="technology_name(technology)" v-bind:path="technology" />
       </div>
     </div>
+
   </div>
 </template>
 
@@ -86,7 +97,7 @@ const technology_name = (path: String) => {
 }
 
 .description {
-  margin: 17px 0;
+  margin: 17px 0 0;
 }
 
 .technologies {

@@ -2,6 +2,7 @@
 import json from "@/json/projects.json";
 import type {ProjectType} from "@/components/ProjectInterface";
 import Technology from "@/components/Technology.vue";
+import {onMounted, ref} from "vue";
 
 const props = defineProps({
   id: {
@@ -9,10 +10,19 @@ const props = defineProps({
     default: "1"
   }
 })
-// add short summary, what exactly it is, which part I did and technologies
 
 const projects: { [id: string]: ProjectType } = json
 const project = projects[props.id]
+
+const last_project = ref(0)
+const next_project = ref(0)
+
+const project_id = parseInt(props.id)
+
+onMounted(() => {
+  last_project.value = (project_id - 1)
+  next_project.value = (project_id + 1)
+})
 
 const technology_name = (path: String) => {
   const technology = (path as string)
@@ -63,6 +73,24 @@ const technology_name = (path: String) => {
       <div class="screenshots">
         <img v-for="ss in project.screenshots" :src="ss" alt="project screenshot" class="screenshot">
       </div>
+    </div>
+  </div>
+  <div class="arrows">
+    <div class="arrow-left" v-if="project_id > 1">
+      <a :href="`/project/${last_project}`">
+        <div class="flex flex-row v-flex-center">
+          <img src="/arrow.svg" alt="" class="arrow">
+          <p class="c-font-size">Last Project</p>
+        </div>
+      </a>
+    </div>
+    <div class="arrow-right" v-if="project_id < 4">
+      <a :href="`/project/${next_project}`">
+        <div class="flex flex-row v-flex-center">
+          <p class="c-font-size">Next Project</p>
+          <img src="/arrow.svg" alt="" class="arrow">
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -158,6 +186,31 @@ const technology_name = (path: String) => {
   border-radius: 6px;
   width: 30vw;
   margin-bottom: 20px;
+}
+
+.arrow {
+  width: 2.3vw;
+}
+
+.arrow:nth-child(1) {
+  transform: rotate(180deg);
+}
+
+.c-font-size {
+  font-size: 1.7rem;
+  padding: 0 15px;
+}
+
+.arrow-left {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.arrow-right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
 }
 
 </style>
