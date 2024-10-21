@@ -2,15 +2,7 @@
 import Project from "@/components/Project.vue";
 import json from '@/json/projects.json'
 import {onMounted, ref} from "vue";
-
-interface ProjectType {
-  name: string;
-  description: string;
-  category: string;
-  link?: string,
-  display_link?: string,
-  technologies: any
-}
+import type {ProjectType} from "@/components/ProjectInterface";
 
 let categories: { [category: string]: ProjectType[]} = {}
 const projects: { [id: string]: ProjectType } = json
@@ -46,7 +38,7 @@ onMounted(() => {
             <div class="project" v-for="project in categories.website">
               <Project
                   :name="project.name"
-                  :description="project.description"
+                  :description="project.summary"
                   :link="project.link"
                   :display_link="project.display_link"
                   :technologies="project.technologies"
@@ -61,7 +53,7 @@ onMounted(() => {
           <div class="project" v-for="project in categories.python">
             <Project
                 :name="project.name"
-                :description="project.description"
+                :description="project.summary"
                 :link="project.link"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
@@ -72,7 +64,7 @@ onMounted(() => {
           <div class="project" v-for="project in categories.kotlin">
             <Project
                 :name="project.name"
-                :description="project.description"
+                :description="project.summary"
                 :link="project.link"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
@@ -86,7 +78,7 @@ onMounted(() => {
           <div class="project" v-for="project in categories.extension">
             <Project
                 :name="project.name"
-                :description="project.description"
+                :description="project.summary"
                 :link="project.link"
                 :display_link="project.display_link"
                 :technologies="project.technologies"
