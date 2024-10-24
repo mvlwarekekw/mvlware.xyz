@@ -22,9 +22,9 @@ const spin = () => {
       <div class="skills">
         <div class="skill-row">
           <Skill path="/python.svg" name="Python" class="skill" />
-          <Skill path="/javaScript.svg" name="JavaScript" class="skill" />
           <Skill path="/typeScript.svg" name="TypeScript" class="skill" />
           <Skill path="/kotlin.svg" name="Kotlin" class="skill" />
+          <Skill path="/database.svg" name="SQL" class="skill" />
         </div>
       </div>
     </div>
